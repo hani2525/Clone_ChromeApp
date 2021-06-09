@@ -16,6 +16,9 @@ body {
     display: none;
   }
   
+  .hidden {
+    display: none;
+  }
   .showing {
     display: block;
   }
