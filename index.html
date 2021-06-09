@@ -2,26 +2,22 @@
 <html lang="en">
 <head>
 
-    <title>Something</title>
+    <title>Something new</title>
     <meta charset="utf-8"/> <!--emoji 출력하기 위해-->
-    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="js-clock">
-            <h1>00:00</h1>
-    </div>
-        <form class="js-form form">
-            <input type="text" placeholder="What is your name?">
-        </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write things to do...">
-        <ul class="js-toDoList">
 
-        </ul>
-    </form>
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
+    <div id="login-form input">
+        <form id="login-form"> <!--유효하려면 반드시 form안에 있어야한다.-->
+            <input
+            required
+            maxlength="15"
+            type="text" 
+            placeholder="What is your name?"/>
+            <button>Log In</button>
+        </form>
+    </div>
+    <a href="https://nomadcoders.co">Go to courses</a>
+    <script src="app.js"></script>
 </body>
 </html>
