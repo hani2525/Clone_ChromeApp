@@ -10,6 +10,7 @@ function handleToDoSubmit(event){
     const li = document.createElement("li");
     li.innerText=newTodo;
     document.querySelector("ul").appendChild(li);
+    const image = document.createElement("image");
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
