@@ -2,15 +2,19 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDOList = document.getElementById("todo-list");
 
+function paintToDo(newTodo){
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    li.appendChild(span);
+    span.innerText=newTodo;
+    toDOList.appendChild(li);
+}
 
 function handleToDoSubmit(event){
     event.preventDefault();
     const newTodo = toDoInput.value;
     toDoInput.value="";
-    const li = document.createElement("li");
-    li.innerText=newTodo;
-    document.querySelector("ul").appendChild(li);
-    const image = document.createElement("image");
+    paintToDo(newTodo);
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
